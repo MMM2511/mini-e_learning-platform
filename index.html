@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini E-Learning Platform</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>My E-Learning Platform</h1>
+  </header>
+
+  <main>
+    <!-- Login / Signup Section -->
+    <section id="auth-section">
+      <div id="auth-container">
+        <h2 id="auth-title">Login</h2>
+
+        <input type="text" id="username" placeholder="Username" />
+        <input type="password" id="password" placeholder="Password" />
+
+        <button class="btn" id="auth-btn">Login</button>
+        <p id="toggle-auth">Don't have an account? <a href="#" id="switch-auth">Sign Up</a></p>
+      </div>
+    </section>
+
+    <!-- Course List -->
+    <section id="course-list-section" class="hidden">
+      <div class="user-header">
+        <h2>Welcome, <span id="current-user"></span> 👋</h2>
+        <button id="logout-btn" class="btn btn-logout">Logout</button>
+      </div>
+      <h3>Available Courses</h3>
+      <div id="course-list" class="course-container"></div>
+    </section>
+
+    <!-- Course Details -->
+    <section id="course-detail-section" class="hidden">
+      <button id="back-btn" class="btn">← Back to Courses</button>
+      <div id="course-detail"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Mini E-Learning Platform</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
